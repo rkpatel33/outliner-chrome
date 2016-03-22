@@ -1,0 +1,43 @@
+// Fonts
+$font-lato: 'Lato', sans-serif;
+
+// Colors
+$color-white: #FFF;
+$color-gray-light: #F5F5F7;
+$color-gray-dark: #F0F0F3;
+
+
+#outliner-sidebar-frame {
+    h1 { font-size: 20px; }
+    h2 { font-size: 18px; }
+    h3 { font-size: 16px; }
+    h4 { font-size: 14px; }
+    h5 { font-size: 12px; }
+    h6 { font-size: 10px; }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+
+    }
+
+    font-family: $font-lato;
+    background-color: $color-white;
+    border: 1px solid $color-gray-dark;
+    box-shadow: -2px 0px 5px $color-gray-dark;
+    right: 0px;
+    height: 100%;
+    margin: 0px;
+    overflow-y: scroll;
+    padding: 0px;
+    position: fixed;
+    top: 0%;
+    width: 300px;
+    z-index: 99999999999999999999999999999;
+
+    #outliner-sidebar-contents {
+        margin: 10px 10px;
+
+    }
+
+}
+

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Website Outliner example",
+  "description": "Outliner displays a sidebar outline of the web page.",
+  "version": "1.0",
+  "icons": { "48": "icon-48.png",
+            "128": "icon-128.png" },
+
+
+  "browser_action": {
+    "default_icon": "icon-48.png",
+    "default_title": "Outliner",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+      {
+        "matches": [ "http://*/*", "https://*/*" ],
+        "css": ["styles/sidebar.css"],
+        "js": ["jquery-2.2.1.min.js", "sidebar.js"]
+      }
+    ],
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/"
+  ]
+}
