@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+    var charSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    var charSetSize = charSet.length;
+    generateRandomId = function(charCount) {
+        var id = '';
+        for (var i = 1; i <= charCount; i++) {
+            var randPos = Math.floor(Math.random() * charSetSize);
+            id += charSet[randPos];
+        }
+        return id;
+    }
+
+
     // hover_button = "<div> \
     //     <div class='outliner-icon-container'> \
     //       <div class='outliner-icon-image'></div> \
@@ -24,10 +36,9 @@ $(document).ready(function() {
         // grab or add an id for the header
         headerID = header.attr('id');
         if (headerID === undefined) {
-            // headerText = header.contents().eq(0).text().trim();
             headerText = header.text().trim();
             console.log(headerText);
-            headerID = headerText.replace(/ /g,'_');
+            headerID = generateRandomId(10);
             header.attr('id', headerID);
         }
 
