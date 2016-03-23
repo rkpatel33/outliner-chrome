@@ -5,7 +5,7 @@ Creates a sidebar with a table of contents of the current page
 # TODO
 
 - style sidebar with consistent formatting (headers, links)
-- make id a uuid to clean up jumping
+- debug in jupyter notebooks
 - hide/show buttons + effects -- study yinon code
     + make state persist across different link clicks in same tab?
     + If it finds elements, automataclly expose

@@ -32,11 +32,11 @@ $(document).ready(function() {
     for (var i = 0; i < headerTags.length; i++) {
 
         header = headerTags.eq(i);
+        headerText = header.text().trim().replace(/[^\x20-\x7E]+/g, '');
 
         // grab or add an id for the header
         headerID = header.attr('id');
         if (headerID === undefined) {
-            headerText = header.text().trim();
             console.log(headerText);
             headerID = generateRandomId(10);
             header.attr('id', headerID);
