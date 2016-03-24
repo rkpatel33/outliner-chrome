@@ -62,8 +62,12 @@ $(document).ready(function() {
     }
 
     $('body').append(sidebarFrame);
-
     console.log('load sidebar.js');
+
+    // Button close action
+    $('#button-close').click(function() {
+        $('#outliner-sidebar-frame').hide();
+    });
 
 });
 
