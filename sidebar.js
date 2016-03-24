@@ -30,7 +30,7 @@ $(document).ready(function() {
     sidebarFrame.append(buttonClose);
     sidebarFrame.append(sidebarContents);
 
-    var headerTags = $("h1, h2, h3, h4, h5, h6");
+    var headerTags = $("h1:visible, h2:visible, h3:visible, h4:visible, h5:visible, h6:visible");
     var sidebarLinks = [];
     for (var i = 0; i < headerTags.length; i++) {
 
