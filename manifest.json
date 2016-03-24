@@ -4,12 +4,11 @@
   "name": "Website Outliner example",
   "description": "Outliner displays a sidebar outline of the web page.",
   "version": "1.0",
-  "icons": { "48": "icon-48.png",
-            "128": "icon-128.png" },
-
+  "icons": { "48": "outliner-icon.png",
+            "128": "outliner-icon.png" },
 
   "browser_action": {
-    "default_icon": "icon-48.png",
+    "default_icon": "outliner-icon.png",
     "default_title": "Outliner",
     "default_popup": "popup.html"
   },
