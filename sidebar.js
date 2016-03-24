@@ -40,13 +40,13 @@ $(document).ready(function() {
             console.log(headerText);
             headerID = generateRandomId(10);
             header.attr('id', headerID);
+            // headerTags.eq(i).replaceWith(header.html);
         }
 
         // create new link to the
         sideBarHeader = $(
             "<" + header.prop('tagName') + ">",
             {
-                id: headerID,
                 text: headerText,
                 class: "sidebar-header"
             }

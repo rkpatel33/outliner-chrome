@@ -1,9 +1,10 @@
-/* line 10, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
+/* line 12, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
 #outliner-sidebar-frame {
   font-family: "Lato", sans-serif;
   background-color: #FFF;
   border: 1px solid #F0F0F3;
   box-shadow: -2px 0px 5px #F0F0F3;
+  color: #005B81;
   right: 0px;
   height: 100%;
   margin: 0px;
@@ -13,25 +14,49 @@
   top: 0%;
   width: 300px;
   z-index: 99999999999999999999999999999; }
-  /* line 11, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
-  #outliner-sidebar-frame h1 {
-    font-size: 20px; }
-  /* line 12, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
-  #outliner-sidebar-frame h2 {
-    font-size: 18px; }
   /* line 13, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
+  #outliner-sidebar-frame h1 {
+    font-size: 20px;
+    color: #005b81;
+    padding-left: 0px; }
+  /* line 18, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
+  #outliner-sidebar-frame h2 {
+    font-size: 18px;
+    color: #006d9b;
+    padding-left: 20px; }
+  /* line 23, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
   #outliner-sidebar-frame h3 {
-    font-size: 16px; }
-  /* line 14, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
+    font-size: 16px;
+    color: #007fb4;
+    padding-left: 40px; }
+  /* line 28, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
   #outliner-sidebar-frame h4 {
-    font-size: 14px; }
-  /* line 15, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
+    font-size: 14px;
+    color: #0091ce;
+    padding-left: 60px; }
+  /* line 33, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
   #outliner-sidebar-frame h5 {
-    font-size: 12px; }
-  /* line 16, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
+    font-size: 12px;
+    color: #00a3e7;
+    padding-left: 80px; }
+  /* line 38, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
   #outliner-sidebar-frame h6 {
-    font-size: 10px; }
-  /* line 32, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
+    font-size: 10px;
+    color: #02b4ff;
+    padding-left: 100px; }
+  /* line 44, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
+  #outliner-sidebar-frame h1, #outliner-sidebar-frame h2, #outliner-sidebar-frame h3, #outliner-sidebar-frame h4, #outliner-sidebar-frame h5, #outliner-sidebar-frame h6 {
+    border: none;
+    font-weight: normal;
+    margin: 0 0 0.80em 0; }
+  /* line 50, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
+  #outliner-sidebar-frame a {
+    text-decoration: none; }
+    /* line 52, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
+    #outliner-sidebar-frame a:hover, #outliner-sidebar-frame a:active {
+      color: inherit;
+      text-decoration: underline; }
+  /* line 73, /Users/rishi/git/outliner-chrome/styles/sidebar.scss */
   #outliner-sidebar-frame #outliner-sidebar-contents {
     margin: 10px 10px; }
 
