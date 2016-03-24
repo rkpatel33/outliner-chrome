@@ -20,11 +20,14 @@ $(document).ready(function() {
     // ";
 
     // Fonte awesome
-    // $('head').append('<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">');
+    $('head').append('<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">');
 
     // Container for siebar html
     var sidebarFrame = $("<div></div>").attr({'id' : 'outliner-sidebar-frame'});
+    var buttonClose = $("<div><i class='fa fa-times-circle'></i></div>").attr({'id' : 'button-close'});
     var sidebarContents = $("<div></div>").attr({'id' : 'outliner-sidebar-contents'});
+
+    sidebarFrame.append(buttonClose);
     sidebarFrame.append(sidebarContents);
 
     var headerTags = $("h1, h2, h3, h4, h5, h6");
@@ -37,7 +40,6 @@ $(document).ready(function() {
         // grab or add an id for the header
         headerID = header.attr('id');
         if (headerID === undefined) {
-            console.log(headerText);
             headerID = generateRandomId(10);
             header.attr('id', headerID);
             // headerTags.eq(i).replaceWith(header.html);
@@ -53,7 +55,7 @@ $(document).ready(function() {
         );
         sidebarLink = $("<a>", {href: "#" + headerID});
 
-        // append onto side panel
+        // append onto side panel one at a time
         sidebarLink.append(sideBarHeader);
         sidebarContents.append(sidebarLink);
 

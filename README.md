@@ -17,6 +17,8 @@ Creates a sidebar with a table of contents of the current page
 
 ## Example pages
 
+http://pandas.pydata.org/pandas-docs/stable/groupby.html
+
 http://api.jquery.com/hide/
 
 http://docs.xlwings.org/en/stable/api.html

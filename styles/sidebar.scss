@@ -1,5 +1,6 @@
 // Fonts
 $font-lato: 'Lato', sans-serif;
+$font-size-h1: 15px;
 
 // Colors
 $color-h1: #005B81;
@@ -10,70 +11,83 @@ $color-gray-dark: #F0F0F3;
 $indent: 20px;
 
 #outliner-sidebar-frame {
-    h1 {
-        font-size: 20px;
-        color: lighten($color-h1, 0%);
-        padding-left: $indent * 0;
-    }
-    h2 {
-        font-size: 18px;
-        color: lighten($color-h1, 5%);
-        padding-left: $indent * 1;
-    }
-    h3 {
-        font-size: 16px;
-        color: lighten($color-h1, 10%);
-        padding-left: $indent * 2;
-    }
-    h4 {
-        font-size: 14px;
-        color: lighten($color-h1, 15%);
-        padding-left: $indent * 3;
-    }
-    h5 {
-        font-size: 12px;
-        color: lighten($color-h1, 20%);
-        padding-left: $indent * 4;
-    }
-    h6 {
-        font-size: 10px;
-        color: lighten($color-h1, 25%);
-        padding-left: $indent * 5;
-    }
 
-    h1, h2, h3, h4, h5, h6 {
-        border: none;
-        font-weight: normal;
-        margin: 0 0 0.80em 0;
-    }
-
-    a {
-        text-decoration: none;
-        &:hover, &:active {
-            color: inherit;
-            text-decoration: underline;
-        }
-    }
-
-    font-family: $font-lato;
     background-color: $color-white;
     border: 1px solid $color-gray-dark;
-    box-shadow: -2px 0px 5px $color-gray-dark;
-    color: $color-h1;
+    box-shadow: -2px 0px 10px $color-gray-dark;
     right: 0px;
     height: 100%;
-    margin: 0px;
-    overflow-y: scroll;
-    padding: 0px;
-    position: fixed;
     top: 0%;
     width: 300px;
     z-index: 99999999999999999999999999999;
+    position: fixed;
+    overflow-y: scroll;
 
-    #outliner-sidebar-contents {
-        margin: 10px 10px;
+    #button-close{
+        color: $color-h1;
+        margin: 10px;
+        text-align: right;
+        font-size: 20px;
 
     }
 
+    #outliner-sidebar-contents {
+
+        font-family: $font-lato;
+        color: $color-h1;
+        margin: 10px 10px;
+        padding: 0px;
+
+        h1 {
+            font-size: $font-size-h1 * 1.00;
+            color: lighten($color-h1, 0%);
+            padding-left: $indent * 0;
+        }
+        h2 {
+            font-size: $font-size-h1 * 0.90;
+            color: lighten($color-h1, 5%);
+            padding-left: $indent * 1;
+        }
+        h3 {
+            font-size: $font-size-h1 * 0.80;
+            color: lighten($color-h1, 10%);
+            padding-left: $indent * 2;
+        }
+        h4 {
+            font-size: $font-size-h1 * 0.70;
+            color: lighten($color-h1, 15%);
+            padding-left: $indent * 3;
+        }
+        h5 {
+            font-size: $font-size-h1 * 0.60;
+            color: lighten($color-h1, 20%);
+            padding-left: $indent * 4;
+        }
+        h6 {
+            font-size: $font-size-h1 * 0.50;
+            color: lighten($color-h1, 25%);
+            padding-left: $indent * 5;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            border: none;
+            font-family: inherit;
+            font-weight: normal;
+            margin: 0 0 0.80em 0;
+
+            &:hover, &:active {
+                font-weight: bold;
+            }
+
+        }
+
+        a {
+            text-decoration: none;
+            &:hover, &:active {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
