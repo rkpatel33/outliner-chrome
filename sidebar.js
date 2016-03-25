@@ -70,13 +70,7 @@ $(document).ready(function() {
 
     // Button close action
     $('#button-close').click(function() {
-        if ($('#outliner-sidebar-frame').is(":visible")) {
-            $('#outliner-sidebar-frame').hide(700);
-        }
-        else {
-            $('#outliner-sidebar-frame').show(700);
-        }
-
+        $('#outliner-sidebar-frame').toggle(600);
     });
 
 });
