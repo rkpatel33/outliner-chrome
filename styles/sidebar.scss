@@ -9,33 +9,48 @@ $color-gray-light: #F5F5F7;
 $color-gray-dark: #F0F0F3;
 
 $indent: 20px;
+$z-index: 10000;
+$button-size: 30px;
+
+
+#button-close{
+    color: $color-h1;
+    height: $button-size;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: $button-size;
+    z-index: $z-index + 1; // on top of main sidebar
+
+    img {
+        height: 100%;
+        width: 100%;
+        opacity: 1.0;
+    }
+
+}
 
 #outliner-sidebar-frame {
 
     background-color: $color-white;
     border: 1px solid $color-gray-dark;
     box-shadow: -2px 0px 10px $color-gray-dark;
+    display: hidden;
+    letter-spacing: normal;
     right: 0px;
     height: 100%;
     top: 0%;
     width: 300px;
-    z-index: 99999999999999999999999999999;
+    z-index: $z-index;
     position: fixed;
     overflow-y: scroll;
 
-    #button-close{
-        color: $color-h1;
-        margin: 10px;
-        text-align: right;
-        font-size: 20px;
-
-    }
 
     #outliner-sidebar-contents {
 
         font-family: $font-lato;
         color: $color-h1;
-        margin: 10px 10px;
+        margin: 50px 10px 10px 10px;
         padding: 0px;
 
         h1 {

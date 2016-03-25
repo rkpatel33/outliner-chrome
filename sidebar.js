@@ -22,12 +22,14 @@ $(document).ready(function() {
     // Fonte awesome
     $('head').append('<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">');
 
+    var imgURL = chrome.extension.getURL("outliner-icon.png");
+
     // Container for siebar html
     var sidebarFrame = $("<div></div>").attr({'id' : 'outliner-sidebar-frame'});
-    var buttonClose = $("<div><i class='fa fa-times-circle'></i></div>").attr({'id' : 'button-close'});
+    // var buttonClose = $("<div><i class='fa fa-times-circle'></i></div>").attr({'id' : 'button-close'});
+    var buttonClose = $("<div></div>").attr({'id' : 'button-close'}).append($("<img>").attr({'src' : imgURL}));
     var sidebarContents = $("<div></div>").attr({'id' : 'outliner-sidebar-contents'});
 
-    sidebarFrame.append(buttonClose);
     sidebarFrame.append(sidebarContents);
 
     var headerTags = $("h1:visible, h2:visible, h3:visible, h4:visible, h5:visible, h6:visible");
@@ -35,6 +37,7 @@ $(document).ready(function() {
     for (var i = 0; i < headerTags.length; i++) {
 
         header = headerTags.eq(i);
+        // Remove all non-printable characters
         headerText = header.text().trim().replace(/[^\x20-\x7E]+/g, '');
 
         // grab or add an id for the header
@@ -61,12 +64,19 @@ $(document).ready(function() {
 
     }
 
+    $('body').append(buttonClose);
     $('body').append(sidebarFrame);
     console.log('load sidebar.js');
 
     // Button close action
     $('#button-close').click(function() {
-        $('#outliner-sidebar-frame').hide();
+        if ($('#outliner-sidebar-frame').is(":visible")) {
+            $('#outliner-sidebar-frame').hide(700);
+        }
+        else {
+            $('#outliner-sidebar-frame').show(700);
+        }
+
     });
 
 });
