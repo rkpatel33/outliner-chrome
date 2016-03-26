@@ -22,6 +22,10 @@ $button-size: 30px;
     width: $button-size;
     z-index: $z-index + 1; // on top of main sidebar
 
+    &:hover {
+        cursor: pointer;
+    }
+
     img {
         height: 100%;
         width: 100%;
