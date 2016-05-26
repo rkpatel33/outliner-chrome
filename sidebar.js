@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var charSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    var charSet = 'ABCDEFG`HI`JKLMNOPQRSTUVWXYZ0123456789';
     var charSetSize = charSet.length;
     generateRandomId = function(charCount) {
         var id = '';
@@ -19,16 +19,18 @@ $(document).ready(function() {
     //   </div> \
     // ";
 
-    // Fonte awesome
+    // Font awesome
     $('head').append('<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">');
 
     var imgURL = chrome.extension.getURL("outliner-icon.png");
 
     // Container for siebar html
     var sidebarFrame = $("<div></div>").attr({'id' : 'outliner-sidebar-frame'});
+
     // var buttonClose = $("<div><i class='fa fa-times-circle'></i></div>").attr({'id' : 'button-close'});
     var buttonClose = $("<div></div>").attr({'id' : 'button-close'}).append($("<img>").attr({'src' : imgURL}));
     var sidebarContents = $("<div></div>").attr({'id' : 'outliner-sidebar-contents'});
+
 
     sidebarFrame.append(sidebarContents);
 
@@ -66,6 +68,8 @@ $(document).ready(function() {
 
     $('body').append(buttonClose);
     $('body').append(sidebarFrame);
+    sidebarFrame.toggle(false);
+
     console.log('load sidebar.js');
 
     // Button close action

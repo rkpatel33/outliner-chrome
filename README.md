@@ -4,7 +4,10 @@ Creates a sidebar with a table of contents of the current page
 
 # TODO
 
+- add to blacklist button to build blocked sites
+    + add and then close
 - highlight first sentence of each <p> and dim out all other sentences
+- debug on Paper
 - hide/show buttons + effects -- study yinon code
     + don't reopen on close when on same site
     + preserve state on close?
