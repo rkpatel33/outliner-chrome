@@ -1,0 +1,22 @@
+{
+  "name": "outliner-chrome",
+  "version": "0.0.1",
+  "description": "Create an outline of the web page",
+  "main": "sidebar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkpatel33/outliner-chrome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkpatel33/outliner-chrome/issues"
+  },
+  "homepage": "https://github.com/rkpatel33/outliner-chrome#readme",
+  "dependencies": {
+    "jquery": "^2.2.4"
+  }
+}

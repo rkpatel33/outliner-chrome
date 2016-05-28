@@ -1,6 +1,11 @@
 # outliner-chrome
-
 Creates a sidebar with a table of contents of the current page
+
+
+# Getting started
+
+$ npm install
+
 
 # TODO
 

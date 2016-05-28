@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $(document).ready(function() {
 
     var charSet = 'ABCDEFG`HI`JKLMNOPQRSTUVWXYZ0123456789';
