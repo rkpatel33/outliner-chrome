@@ -1,43 +1,41 @@
 {
-  "manifest_version": 2,
-  "name": "Website Outliner example",
-  "description": "Outliner displays a sidebar outline of the web page.",
-  "version": "1.0",
-  "icons": {
-    "48": "outliner-icon.png",
-    "128": "outliner-icon.png"
-  },
-  "browser_action": {
-    "default_icon": "outliner-icon.png",
-    "default_title": "Outliner",
-    "default_popup": "popup.html"
-  },
-  "content_scripts": [
-    {
-      "matches": [
-        "http://*/*",
-        "https://*/*"
-      ],
-      "exclude_matches": [
-        "http://mail.google.com/*",
-        "https://mail.google.com/*"
-      ],
-      "css": [
-        "styles/sidebar.css"
-      ],
-      "js": [
-        // "jquery-2.2.1.min.js",
-        "sidebar.js"
-      ]
-    }
-  ],
-  "web_accessible_resources": [
-    "*.img",
-    "*.png"
-  ],
-  "permissions": [
-    "activeTab",
-    "tabs",
-    "https://ajax.googleapis.com/"
-  ]
+    "manifest_version": 2,
+    "name": "Website Outliner example",
+    "description": "Outliner displays a sidebar outline of the web page.",
+    "version": "1.0",
+    "icons": {
+        "48": "outliner-icon.png",
+        "128": "outliner-icon.png"
+    },
+    "browser_action": {
+        "default_icon": "outliner-icon.png",
+        "default_title": "Outliner",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "exclude_matches": [
+            "http://mail.google.com/*",
+            "https://mail.google.com/*"
+        ],
+        "css": [
+            "styles/sidebar.css"
+        ],
+        "js": [
+            "node_modules/jquery/dist/jquery.min.js",
+            "sidebar.js"
+        ]
+    }],
+    "web_accessible_resources": [
+        "*.img",
+        "*.png"
+    ],
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "https://ajax.googleapis.com/"
+    ]
 }

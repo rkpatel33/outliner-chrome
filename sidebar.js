@@ -1,4 +1,3 @@
-import $ from 'jquery';
 
 $(document).ready(function() {
 
@@ -26,7 +25,7 @@ $(document).ready(function() {
 
     var imgURL = chrome.extension.getURL("outliner-icon.png");
 
-    // Container for siebar html
+    // Create container for sidebar html
     var sidebarFrame = $("<div></div>").attr({'id' : 'outliner-sidebar-frame'});
 
     // var buttonClose = $("<div><i class='fa fa-times-circle'></i></div>").attr({'id' : 'button-close'});
