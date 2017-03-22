@@ -34,6 +34,21 @@ $button-size: 30px;
 
 }
 
+
+$sidebar_width: 300px;
+
+.body-wrapper {
+    &.show-sidebar {
+        padding-right: $sidebar_width;
+
+    }
+
+    &.hide-sidebar {
+        width: 100%;
+    }
+}
+
+
 #outliner-sidebar-frame {
 
     background-color: $color-white;
@@ -44,7 +59,7 @@ $button-size: 30px;
     right: 0px;
     height: 100%;
     top: 0%;
-    width: 300px;
+    width: $sidebar_width;
     z-index: $z-index;
     position: fixed;
     overflow-y: scroll;

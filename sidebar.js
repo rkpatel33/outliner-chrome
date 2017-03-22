@@ -8,8 +8,22 @@ $(document).ready(function() {
 
         // Toggle sidebar
         if (request.command == "toggle") {
-            $('#outliner-sidebar-frame').toggle(500);
-            console.log('Toggle command recieved');
+            $('#outliner-sidebar-frame').toggle(500, function() {
+                // Adjust the width of the rest of the page
+                if ($('#outliner-sidebar-frame').css('display') == 'block') {
+                    // add show-sidebar class
+                    $('.body-wrapper').removeClass('hide-sidebar').addClass('show-sidebar');
+                    console.log('add show-sidebar class');
+
+                } else {
+                    // add hide-sidebar class
+                    $('.body-wrapper').removeClass('show-sidebar').addClass('hide-sidebar');
+                    console.log('add hide-sidebar class');
+                }
+                console.log('Toggle command recieved');
+
+            });
+
         }
 
     });
@@ -71,6 +85,7 @@ $(document).ready(function() {
 
     }
 
+    $('body').wrapInner('<div class="body-wrapper hide-sidebar" />');
     $('body').append(sidebarFrame);
     sidebarFrame.toggle(false);
 
