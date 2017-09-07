@@ -16,7 +16,7 @@ In Chrome:
 
 # TODO
 
-- Inject html using iframe to isolate css and manage complex html 
+- Inject html using iframe to isolate css and manage complex html
     + http://stackoverflow.com/questions/15873904/adding-complex-html-using-a-chrome-content-script
 - Inject HMTL so that it pushes the body to make it narrower instead of covering part of the page
 - Try to target the main portion of the body for parsing, currently captured headings in existing TOCs, headers, and footers.
