@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/rkpatel33/outliner-chrome#readme",
   "dependencies": {
-    "jquery": "^2.2.4"
+    "jquery": "^3.5.0"
   }
 }
