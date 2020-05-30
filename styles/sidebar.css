@@ -5,13 +5,16 @@
   right: 10px;
   top: 10px;
   width: 30px;
-  z-index: 100001; }
-  #button-close:hover {
-    cursor: pointer; }
-  #button-close img {
-    height: 100%;
-    width: 100%;
-    opacity: 1.0; }
+  z-index: 100001;
+}
+#button-close:hover {
+  cursor: pointer;
+}
+#button-close img {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
 
 #outliner-sidebar-frame {
   background-color: #FFF;
@@ -25,51 +28,69 @@
   width: 300px;
   z-index: 100000;
   position: fixed;
-  overflow-y: scroll; }
-  #outliner-sidebar-frame #outliner-sidebar-contents {
-    font-family: "Lato", sans-serif;
-    color: #005B81;
-    margin: 50px 10px 10px 10px;
-    padding: 0px; }
-    #outliner-sidebar-frame #outliner-sidebar-contents h1 {
-      font-size: 15px;
-      color: #005b81;
-      padding-left: 0px; }
-    #outliner-sidebar-frame #outliner-sidebar-contents h2 {
-      font-size: 13.5px;
-      color: #006d9b;
-      padding-left: 20px; }
-    #outliner-sidebar-frame #outliner-sidebar-contents h3 {
-      font-size: 12px;
-      color: #007fb4;
-      padding-left: 40px; }
-    #outliner-sidebar-frame #outliner-sidebar-contents h4 {
-      font-size: 10.5px;
-      color: #0091ce;
-      padding-left: 60px; }
-    #outliner-sidebar-frame #outliner-sidebar-contents h5 {
-      font-size: 9px;
-      color: #00a3e7;
-      padding-left: 80px; }
-    #outliner-sidebar-frame #outliner-sidebar-contents h6 {
-      font-size: 7.5px;
-      color: #02b4ff;
-      padding-left: 100px; }
-    #outliner-sidebar-frame #outliner-sidebar-contents h1, #outliner-sidebar-frame #outliner-sidebar-contents h2, #outliner-sidebar-frame #outliner-sidebar-contents h3, #outliner-sidebar-frame #outliner-sidebar-contents h4, #outliner-sidebar-frame #outliner-sidebar-contents h5, #outliner-sidebar-frame #outliner-sidebar-contents h6 {
-      border: none;
-      font-family: inherit;
-      font-weight: normal;
-      line-height: 1.3em;
-      margin: 0 0 1.0em 0; }
-      #outliner-sidebar-frame #outliner-sidebar-contents h1.in-view, #outliner-sidebar-frame #outliner-sidebar-contents h2.in-view, #outliner-sidebar-frame #outliner-sidebar-contents h3.in-view, #outliner-sidebar-frame #outliner-sidebar-contents h4.in-view, #outliner-sidebar-frame #outliner-sidebar-contents h5.in-view, #outliner-sidebar-frame #outliner-sidebar-contents h6.in-view {
-        color: green;
-        font-weight: 900; }
-      #outliner-sidebar-frame #outliner-sidebar-contents h1:hover, #outliner-sidebar-frame #outliner-sidebar-contents h1:active, #outliner-sidebar-frame #outliner-sidebar-contents h2:hover, #outliner-sidebar-frame #outliner-sidebar-contents h2:active, #outliner-sidebar-frame #outliner-sidebar-contents h3:hover, #outliner-sidebar-frame #outliner-sidebar-contents h3:active, #outliner-sidebar-frame #outliner-sidebar-contents h4:hover, #outliner-sidebar-frame #outliner-sidebar-contents h4:active, #outliner-sidebar-frame #outliner-sidebar-contents h5:hover, #outliner-sidebar-frame #outliner-sidebar-contents h5:active, #outliner-sidebar-frame #outliner-sidebar-contents h6:hover, #outliner-sidebar-frame #outliner-sidebar-contents h6:active {
-        font-weight: bold; }
-    #outliner-sidebar-frame #outliner-sidebar-contents a {
-      text-decoration: none; }
-      #outliner-sidebar-frame #outliner-sidebar-contents a:hover, #outliner-sidebar-frame #outliner-sidebar-contents a:active {
-        color: inherit;
-        text-decoration: none; }
+  overflow-y: scroll;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents {
+  font-family: "Lato", sans-serif;
+  color: #005B81;
+  margin: 50px 10px 10px 10px;
+  padding: 0px;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents h1 {
+  font-size: 15px;
+  color: #005b81;
+  padding-left: 0px;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents h2 {
+  font-size: 13.5px;
+  color: #006d9b;
+  padding-left: 20px;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents h3 {
+  font-size: 12px;
+  color: #007fb4;
+  padding-left: 40px;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents h4 {
+  font-size: 10.5px;
+  color: #0091ce;
+  padding-left: 60px;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents h5 {
+  font-size: 9px;
+  color: #00a3e7;
+  padding-left: 80px;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents h6 {
+  font-size: 7.5px;
+  color: #02b4ff;
+  padding-left: 100px;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents dt {
+  font-size: 12px;
+  color: #007fb4;
+  padding-left: 40px;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents h1, #outliner-sidebar-frame #outliner-sidebar-contents h2, #outliner-sidebar-frame #outliner-sidebar-contents h3, #outliner-sidebar-frame #outliner-sidebar-contents h4, #outliner-sidebar-frame #outliner-sidebar-contents h5, #outliner-sidebar-frame #outliner-sidebar-contents h6, #outliner-sidebar-frame #outliner-sidebar-contents dt {
+  border: none;
+  font-family: inherit;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0 0 1em 0;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents h1.in-view, #outliner-sidebar-frame #outliner-sidebar-contents h2.in-view, #outliner-sidebar-frame #outliner-sidebar-contents h3.in-view, #outliner-sidebar-frame #outliner-sidebar-contents h4.in-view, #outliner-sidebar-frame #outliner-sidebar-contents h5.in-view, #outliner-sidebar-frame #outliner-sidebar-contents h6.in-view, #outliner-sidebar-frame #outliner-sidebar-contents dt.in-view {
+  color: green;
+  font-weight: 900;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents h1:hover, #outliner-sidebar-frame #outliner-sidebar-contents h1:active, #outliner-sidebar-frame #outliner-sidebar-contents h2:hover, #outliner-sidebar-frame #outliner-sidebar-contents h2:active, #outliner-sidebar-frame #outliner-sidebar-contents h3:hover, #outliner-sidebar-frame #outliner-sidebar-contents h3:active, #outliner-sidebar-frame #outliner-sidebar-contents h4:hover, #outliner-sidebar-frame #outliner-sidebar-contents h4:active, #outliner-sidebar-frame #outliner-sidebar-contents h5:hover, #outliner-sidebar-frame #outliner-sidebar-contents h5:active, #outliner-sidebar-frame #outliner-sidebar-contents h6:hover, #outliner-sidebar-frame #outliner-sidebar-contents h6:active, #outliner-sidebar-frame #outliner-sidebar-contents dt:hover, #outliner-sidebar-frame #outliner-sidebar-contents dt:active {
+  font-weight: bold;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents a {
+  text-decoration: none;
+}
+#outliner-sidebar-frame #outliner-sidebar-contents a:hover, #outliner-sidebar-frame #outliner-sidebar-contents a:active {
+  color: inherit;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=sidebar.css.map */

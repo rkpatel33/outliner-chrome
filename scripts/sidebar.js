@@ -31,7 +31,7 @@ $(document).ready(function () {
     sidebarFrame.append(sidebarContents);
 
     // Get all visible header tags
-    var headerTags = $('h1:visible, h2:visible, h3:visible, h4:visible, h5:visible, h6:visible');
+    var headerTags = $('h1:visible, h2:visible, h3:visible, h4:visible, h5:visible, h6:visible, dt:visible');
     var sidebarLinks = [];
 
     for (var i = 0; i < headerTags.length; i++) {

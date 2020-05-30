@@ -88,8 +88,14 @@ $button-size: 30px;
             color: lighten($color-h1, 25%);
             padding-left: $indent * 5;
         }
+        // This is for readthedocs style docs
+        dt {
+            font-size: $font-size-h1 * 0.80;
+            color: lighten($color-h1, 10%);
+            padding-left: $indent * 2;
+        }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1, h2, h3, h4, h5, h6, dt {
             border: none;
             font-family: inherit;
             font-weight: normal;
@@ -100,7 +106,7 @@ $button-size: 30px;
                 color: green;
                 font-weight: 900;
             }
-        
+
             &:hover, &:active {
                 font-weight: bold;
             }

@@ -31,10 +31,11 @@ var updateOutline = () => {
 
         // Apply formatting
         if (isElementInViewport(targetElement)) {
-            $(linkElement.querySelectorAll('h1, h2, h3, h4, h5, h6')).addClass('in-view');
+            // dt is for readthedocs style docs
+            $(linkElement.querySelectorAll('h1, h2, h3, h4, h5, h6, dt')).addClass('in-view');
             // console.log(linkElement);
         } else {
-            $(linkElement.querySelectorAll('h1, h2, h3, h4, h5, h6')).removeClass('in-view');
+            $(linkElement.querySelectorAll('h1, h2, h3, h4, h5, h6, dt')).removeClass('in-view');
         }
     });
 };
