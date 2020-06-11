@@ -56,7 +56,7 @@ $(document).ready(function () {
             '<' + header.prop('tagName') + '>',
             {
                 text: headerText,
-                class: 'sidebar-header'
+                class: 'outliner-sidebar-header'
             }
         );
         var sidebarLink = $('<a>', {href: '#' + headerID});
