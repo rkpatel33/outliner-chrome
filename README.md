@@ -1,4 +1,4 @@
-# outliner-chrome
+# Chrome outliner
 Creates a sidebar with a table of contents of the current page. Adds a Chrome toolbar button that can be used to show/hide an outline of the webpage. This is a very basic implementation and not very smart, but works on most pages well enough to be useful, especially for long documentation pages.
 
 ![alt tag](https://github.com/rkpatel33/outliner-chrome/blob/master/screenshot1.png)
